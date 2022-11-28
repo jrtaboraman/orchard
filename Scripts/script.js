@@ -1,20 +1,35 @@
-function toggle1() {
+const blurMe = () => {
   var blur = document.getElementById("blur");
   blur.classList.toggle("active");
-  var popup1 = document.getElementById("popup1");
-  popup1.classList.toggle("active");
+};
+
+function toggle1() {
+  blurMe();
+  document.getElementById("popup1").classList.toggle("active");
 }
 
 function toggle2() {
-  var blur = document.getElementById("blur");
-  blur.classList.toggle("active");
-  var popup2 = document.getElementById("popup2");
-  popup2.classList.toggle("active");
+  blurMe();
+  document.getElementById("popup2").classList.toggle("active");
 }
 
 function toggle3() {
-  var blur = document.getElementById("blur");
-  blur.classList.toggle("active");
-  var popup3 = document.getElementById("popup3");
-  popup3.classList.toggle("active");
+  blurMe();
+  document.getElementById("popup3").classList.toggle("active");
 }
+
+const image1 = document.querySelector("#image1");
+const image2 = document.querySelector("#image2");
+const image3 = document.querySelector("#image3");
+
+image1.addEventListener("click", (e) => {
+  console.log(e.target);
+});
+
+image2.addEventListener("click", (e) => {
+  console.log(e.target);
+});
+
+image3.addEventListener("click", (e) => {
+  console.log(e.target);
+});

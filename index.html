@@ -19,11 +19,16 @@
     <div class="container justify-content-center align-items-center" id="blur">
       <div class="row pb-5">
         <div class="col-md-4 col-sm-12 col-lg-4" id="div1">
-          <img src="./assets/component-01/Image-01.jpg" class="img-fluid" />
+          <img 
+          onclick="toggle1()"
+          src="./assets/component-01/Image-01.jpg" class="img-fluid" />
         </div>
         <div class="col-md-4 col-sm-12 col-lg-4" id="div2">
-          <img src="./assets/component-01/Image-02.jpg" class="img-fluid" />
+          <img 
+          onclick="toggle2()"
+          src="./assets/component-01/Image-02.jpg" class="img-fluid" />
           <img
+          onclick="toggle3()"
             src="./assets/component-01/Image-03.jpg"
             class="img-fluid pt-4"
           />
@@ -54,11 +59,13 @@
       </div>
       <div class="row pt-2">
         <div class="col-md-4 col-sm-12 col-lg-4">
+            <a>
           <img
-            onclick="toggle1()"
+            id="image1"
             src="./assets/component-02/Image-01.jpg"
             class="img-fluid border-bottom border-danger border-5"
           />
+            </a>
           <h5 class="text-light fw-normal pt-5">
             Summer Lunch Menu By Mark Best
           </h5>
@@ -70,11 +77,13 @@
             <span class="border-bottom border-danger pb-2">READ MORE</span>
         </div>
         <div class="col-md-4 col-sm-12 col-lg-4">
+            <a>
           <img
-            onclick="toggle2()"
+            id="image2"
             src="./assets/component-02/Image-02.jpg"
             class="border-bottom img-fluid border-danger border-5"
           />
+            </a>
           <h5 class="text-light fw-normal pt-5">
             A Traditional Christmas Eve, Mark Best Style
           </h5>
@@ -87,11 +96,13 @@
             <span class="border-bottom border-danger pb-2">READ MORE</span>
         </div>
         <div class="col-md-4 col-sm-12 col-lg-4">
+            <a>
           <img
-            onclick="toggle3()"
+            id="image3"
             src="./assets/component-02/Image-03.jpg"
             class="border-bottom img-fluid border-danger border-5"
           />
+            </a>
           <h5 class="text-light fw-normal pt-5">Taking Taste Further</h5>
           <p class="pt-2 fw-lighter">
             This exclusive cookbook gives you all the know-how you need. We've
@@ -105,16 +116,13 @@
       </div>
     </div>
     <div id="popup1">
-        <img src="./assets/component-02/Image-01@2x.jpg" class="img-fluid"/>
-        <a onclick="toggle1()">Close</a>
+        <img src="./assets/component-01/Image-01@2x.jpg" class="img-fluid" a onclick="toggle1()"/>
     </div>
     <div id="popup2">
-        <img src="./assets/component-02/Image-02@2x.jpg" class="img-fluid"/>
-        <a onclick="toggle2()">Close</a>
+        <img src="./assets/component-01/Image-02@2x.jpg" class="img-fluid" a onclick="toggle2()"/>
     </div>
     <div id="popup3">
-        <img src="./assets/component-02/Image-03@2x.jpg" class="img-fluid"/>
-        <a onclick="toggle3()">Close</a>
+        <img src="./assets/component-01/Image-03@2x.jpg" class="img-fluid" a onclick="toggle3()"/>
     </div>
 
     <script
