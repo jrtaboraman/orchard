@@ -3,3 +3,32 @@ hr {
   background-color: white;
   opacity: 1;
 }
+
+.container {
+  padding-top: 12%;
+}
+
+body {
+  background-color: #0e1414;
+}
+
+#div1 {
+  padding-right: 0px;
+  margin-right: 0 !important;
+}
+
+#div2 {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+#div3 {
+  padding-left: 0px;
+  margin-left: 0 !important;
+}
+
+p {
+  color: #babcbc;
+}
